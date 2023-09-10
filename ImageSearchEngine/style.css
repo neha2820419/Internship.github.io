@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    align-items:center;
+}
+.search{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.search img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.search .content{
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    
+} 
+.search h1{
+    margin-top: 20px;
+    font-size: 2.65rem;
+    font-weight: 600;
+    
+}
+.search p{
+    font-size: 1.5rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.search .search-boxes{
+    height: 55px;
+    margin: 45px 0;
+    position: relative;
+}
+.search-form i{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    font-size: 1.4rem;
+    color: grey;
+    transform: translateY(-50%);
+}
+::placeholder{
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    left: 30px;
+}
+input, button {
+    outline: none;
+    border: none;
+   
+}
+.search-boxes input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    padding-left: 0%; 
+}
+
+ #show-more-btn{
+    margin: 10px auto 100px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 12px 27px;
+    background: #8a6cff;
+    text-align: center;
+    display: none;
+    border-radius: 5px;
+}
+
+#search-result{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    grid-gap: 40px;
+
+}
+#search-result img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+form{
+   margin: auto;
+    height: 60px;
+    display: flex;
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 5px;
+    position:relative;
+}
+form input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: black;
+    font-size: 18px;
+    padding: 8px 30px;
+}
+form button{
+    padding: 20px 40px;
+    height: 100%;
+    background: orange;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    display: flex;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 650px){
+    .search h1{
+        font-size: 1.5rem;
+    }
+    .search p{
+        font-size: 1rem;
+    }
+}
+@media (max-width:500){
+  
+}
